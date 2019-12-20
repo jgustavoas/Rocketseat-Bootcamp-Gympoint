@@ -1,0 +1,258 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/main/AndroidManifest.xml:1:1-26:12
+MERGED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/main/AndroidManifest.xml:1:1-26:12
+MERGED from [:react-native-gesture-handler] /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:@react-native-community_async-storage] /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-reanimated] /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-screens] /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-vector-icons] /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.react:react-native:0.61.5] /home/gustavo/.gradle/caches/transforms-2/files-2.1/4d670854abf6a81e4d3512f433cb7af4/AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.android.material:material:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/24312e38c6945b6550131c9f1d96cafa/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/5068723153f83ff628ae9c89c982e578/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/c0f9227c96c1bf9e3c8480d38f8e1c8f/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/0a953a044889af8c25e09e73111b2fb7/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0-alpha02] /home/gustavo/.gradle/caches/transforms-2/files-2.1/5d43e0a2dbb0bb29817812c5dd5961d6/AndroidManifest.xml:17:1-24:12
+MERGED from [org.webkit:android-jsc:r245459] /home/gustavo/.gradle/caches/transforms-2/files-2.1/8bae17ad6d11b1b2ad0e3b0bd4cf7645/AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.fresco:fresco:2.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/b726c229fa654991fbad371ba85910e9/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/a84db18738dc7aa976af3645b4a79f69/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:2.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/26e53e2d8e62bf76fae6ba89b456edb9/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/9882dc4af717618c18ea091f5ea5f1b3/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/5fb1229efa94cf63e9141b85e1fee735/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/214bb1f280e6de09775e571212d22121/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/0c615476412176d6de37aa75a64cd5ee/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.6.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/7126af131ab58cb76020669d1925bda3/AndroidManifest.xml:2:1-13:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/81684e0eab26cbdee26c24a1dfe85dc4/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/778f8b588a1ae4782be44d2e712e9de9/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/e2c00ddb6141ba039ab7a7b0be2d3f0c/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.1.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/fa74f52b786d1d05554c9123fcce4e16/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/c5e08d1363c12ae6040186b7f69dad98/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.1.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/15f82611550e4b65dfed116bf64d3cc5/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/5c4d59fc294a7b6758878c9fd7f20649/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/2890f144c2e22e195f3e7561821eb237/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/9a7ff14aa68d7649a351305d5e53b28b/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/2fc52aa07bec526058db495ff8f74629/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/3f73886d6202b41250c18f24a5af759e/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/043e648ae3acc585c2fec4af9c62e7bf/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/d8cbb3766a97007881b91338accea02c/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/98b0c91fd0a6f09d6972017f8079e2ed/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/e0a56ea7532a51bc1b6e2eb793710dae/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.1.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/9fb72099f9c8e2a95abe62e913c2a969/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/48cc3f3d9b30da6802b4a5d62985a9a4/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/d9afa8ea278de1d240a4a9080f7c90af/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/d55e935ce774acaf0f12ac6d8b365a11/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/743eca071de0e5f8aaf5de6882afd3f3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/1b72c6a0995f2fa6b4c926b35001235f/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/3279a247e1ead3a692840804f8d11a17/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/3d6356e3713e59a452b9d17d5a1cf639/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/74b572bf722d3c0a029f1d0d503cafe6/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/77603b7bad3abfee7c58f73299c9d7aa/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/e49b4963a5dcfbf8a02490b0dcda13e1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/13aca03fc3f7d46de21745b8756d158b/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/a33ea287743baf2f2347133a05c3966e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/791df1898e8199a90570accf790e8f37/AndroidManifest.xml:2:1-9:12
+INJECTED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/debug/AndroidManifest.xml:2:1-8:12
+INJECTED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/debug/AndroidManifest.xml:2:1-8:12
+INJECTED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/debug/AndroidManifest.xml:2:1-8:12
+	package
+		ADDED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/main/AndroidManifest.xml:2:3-28
+		INJECTED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/main/AndroidManifest.xml:2:3-28
+		INJECTED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/debug/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/main/AndroidManifest.xml:1:1-26:12
+		INJECTED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/debug/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/debug/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/main/AndroidManifest.xml:1:1-26:12
+		INJECTED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/debug/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/main/AndroidManifest.xml:4:5-67
+	android:name
+		ADDED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/main/AndroidManifest.xml:4:22-64
+application
+ADDED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/main/AndroidManifest.xml:6:5-24:19
+MERGED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/main/AndroidManifest.xml:6:5-24:19
+MERGED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/main/AndroidManifest.xml:6:5-24:19
+MERGED from [com.facebook.react:react-native:0.61.5] /home/gustavo/.gradle/caches/transforms-2/files-2.1/4d670854abf6a81e4d3512f433cb7af4/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.react:react-native:0.61.5] /home/gustavo/.gradle/caches/transforms-2/files-2.1/4d670854abf6a81e4d3512f433cb7af4/AndroidManifest.xml:11:5-20
+MERGED from [com.google.android.material:material:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/24312e38c6945b6550131c9f1d96cafa/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/24312e38c6945b6550131c9f1d96cafa/AndroidManifest.xml:22:5-20
+MERGED from [com.facebook.soloader:soloader:0.6.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/7126af131ab58cb76020669d1925bda3/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.6.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/7126af131ab58cb76020669d1925bda3/AndroidManifest.xml:11:5-20
+MERGED from [androidx.core:core:1.1.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/9fb72099f9c8e2a95abe62e913c2a969/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.1.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/9fb72099f9c8e2a95abe62e913c2a969/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/d55e935ce774acaf0f12ac6d8b365a11/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/d55e935ce774acaf0f12ac6d8b365a11/AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.1.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/9fb72099f9c8e2a95abe62e913c2a969/AndroidManifest.xml:24:18-86
+	android:label
+		ADDED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/main/AndroidManifest.xml:8:7-39
+		ADDED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/main/AndroidManifest.xml:8:7-39
+	tools:ignore
+		ADDED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/debug/AndroidManifest.xml:7:75-114
+	android:roundIcon
+		ADDED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/main/AndroidManifest.xml:10:7-52
+		ADDED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/main/AndroidManifest.xml:10:7-52
+	tools:targetApi
+		ADDED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/debug/AndroidManifest.xml:7:54-74
+	android:icon
+		ADDED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/main/AndroidManifest.xml:9:7-41
+		ADDED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/main/AndroidManifest.xml:9:7-41
+	android:allowBackup
+		ADDED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/main/AndroidManifest.xml:11:7-34
+		ADDED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/main/AndroidManifest.xml:11:7-34
+	android:theme
+		ADDED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/main/AndroidManifest.xml:12:7-38
+		ADDED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/main/AndroidManifest.xml:12:7-38
+	android:usesCleartextTraffic
+		ADDED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/debug/AndroidManifest.xml:7:18-53
+	android:name
+		ADDED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/main/AndroidManifest.xml:7:7-38
+		ADDED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/main/AndroidManifest.xml:7:7-38
+activity#com.gympointapp.MainActivity
+ADDED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/main/AndroidManifest.xml:13:7-22:18
+	android:label
+		ADDED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/main/AndroidManifest.xml:15:9-41
+	android:windowSoftInputMode
+		ADDED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/main/AndroidManifest.xml:17:9-51
+	android:configChanges
+		ADDED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/main/AndroidManifest.xml:16:9-79
+	android:name
+		ADDED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/main/AndroidManifest.xml:14:9-37
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/main/AndroidManifest.xml:18:9-21:25
+action#android.intent.action.MAIN
+ADDED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/main/AndroidManifest.xml:19:13-65
+	android:name
+		ADDED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/main/AndroidManifest.xml:19:21-62
+category#android.intent.category.LAUNCHER
+ADDED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/main/AndroidManifest.xml:20:13-73
+	android:name
+		ADDED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/main/AndroidManifest.xml:20:23-70
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/main/AndroidManifest.xml:23:7-84
+	android:name
+		ADDED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/main/AndroidManifest.xml:23:17-81
+uses-sdk
+INJECTED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/main/AndroidManifest.xml
+INJECTED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/main/AndroidManifest.xml
+MERGED from [:react-native-gesture-handler] /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:@react-native-community_async-storage] /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:@react-native-community_async-storage] /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-reanimated] /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-reanimated] /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-screens] /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-screens] /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.61.5] /home/gustavo/.gradle/caches/transforms-2/files-2.1/4d670854abf6a81e4d3512f433cb7af4/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.61.5] /home/gustavo/.gradle/caches/transforms-2/files-2.1/4d670854abf6a81e4d3512f433cb7af4/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.material:material:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/24312e38c6945b6550131c9f1d96cafa/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/24312e38c6945b6550131c9f1d96cafa/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.1.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/5068723153f83ff628ae9c89c982e578/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/5068723153f83ff628ae9c89c982e578/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/c0f9227c96c1bf9e3c8480d38f8e1c8f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/c0f9227c96c1bf9e3c8480d38f8e1c8f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/0a953a044889af8c25e09e73111b2fb7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/0a953a044889af8c25e09e73111b2fb7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0-alpha02] /home/gustavo/.gradle/caches/transforms-2/files-2.1/5d43e0a2dbb0bb29817812c5dd5961d6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0-alpha02] /home/gustavo/.gradle/caches/transforms-2/files-2.1/5d43e0a2dbb0bb29817812c5dd5961d6/AndroidManifest.xml:20:5-22:41
+MERGED from [org.webkit:android-jsc:r245459] /home/gustavo/.gradle/caches/transforms-2/files-2.1/8bae17ad6d11b1b2ad0e3b0bd4cf7645/AndroidManifest.xml:7:5-9:41
+MERGED from [org.webkit:android-jsc:r245459] /home/gustavo/.gradle/caches/transforms-2/files-2.1/8bae17ad6d11b1b2ad0e3b0bd4cf7645/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.fresco:fresco:2.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/b726c229fa654991fbad371ba85910e9/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:2.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/b726c229fa654991fbad371ba85910e9/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/a84db18738dc7aa976af3645b4a79f69/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/a84db18738dc7aa976af3645b4a79f69/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/26e53e2d8e62bf76fae6ba89b456edb9/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/26e53e2d8e62bf76fae6ba89b456edb9/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/9882dc4af717618c18ea091f5ea5f1b3/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/9882dc4af717618c18ea091f5ea5f1b3/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/5fb1229efa94cf63e9141b85e1fee735/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/5fb1229efa94cf63e9141b85e1fee735/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/214bb1f280e6de09775e571212d22121/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/214bb1f280e6de09775e571212d22121/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/0c615476412176d6de37aa75a64cd5ee/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/0c615476412176d6de37aa75a64cd5ee/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/7126af131ab58cb76020669d1925bda3/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/7126af131ab58cb76020669d1925bda3/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/81684e0eab26cbdee26c24a1dfe85dc4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/81684e0eab26cbdee26c24a1dfe85dc4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/778f8b588a1ae4782be44d2e712e9de9/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/778f8b588a1ae4782be44d2e712e9de9/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/e2c00ddb6141ba039ab7a7b0be2d3f0c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/e2c00ddb6141ba039ab7a7b0be2d3f0c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.1.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/fa74f52b786d1d05554c9123fcce4e16/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.1.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/fa74f52b786d1d05554c9123fcce4e16/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/c5e08d1363c12ae6040186b7f69dad98/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/c5e08d1363c12ae6040186b7f69dad98/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.1.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/15f82611550e4b65dfed116bf64d3cc5/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/15f82611550e4b65dfed116bf64d3cc5/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/5c4d59fc294a7b6758878c9fd7f20649/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/5c4d59fc294a7b6758878c9fd7f20649/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/2890f144c2e22e195f3e7561821eb237/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/2890f144c2e22e195f3e7561821eb237/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/9a7ff14aa68d7649a351305d5e53b28b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/9a7ff14aa68d7649a351305d5e53b28b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/2fc52aa07bec526058db495ff8f74629/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/2fc52aa07bec526058db495ff8f74629/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/3f73886d6202b41250c18f24a5af759e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/3f73886d6202b41250c18f24a5af759e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/043e648ae3acc585c2fec4af9c62e7bf/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/043e648ae3acc585c2fec4af9c62e7bf/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/d8cbb3766a97007881b91338accea02c/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/d8cbb3766a97007881b91338accea02c/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/98b0c91fd0a6f09d6972017f8079e2ed/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/98b0c91fd0a6f09d6972017f8079e2ed/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/e0a56ea7532a51bc1b6e2eb793710dae/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/e0a56ea7532a51bc1b6e2eb793710dae/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.1.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/9fb72099f9c8e2a95abe62e913c2a969/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/9fb72099f9c8e2a95abe62e913c2a969/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/48cc3f3d9b30da6802b4a5d62985a9a4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/48cc3f3d9b30da6802b4a5d62985a9a4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/d9afa8ea278de1d240a4a9080f7c90af/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/d9afa8ea278de1d240a4a9080f7c90af/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/d55e935ce774acaf0f12ac6d8b365a11/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/d55e935ce774acaf0f12ac6d8b365a11/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/743eca071de0e5f8aaf5de6882afd3f3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/743eca071de0e5f8aaf5de6882afd3f3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/1b72c6a0995f2fa6b4c926b35001235f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/1b72c6a0995f2fa6b4c926b35001235f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/3279a247e1ead3a692840804f8d11a17/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/3279a247e1ead3a692840804f8d11a17/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/3d6356e3713e59a452b9d17d5a1cf639/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/3d6356e3713e59a452b9d17d5a1cf639/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/74b572bf722d3c0a029f1d0d503cafe6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/74b572bf722d3c0a029f1d0d503cafe6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/77603b7bad3abfee7c58f73299c9d7aa/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/77603b7bad3abfee7c58f73299c9d7aa/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/e49b4963a5dcfbf8a02490b0dcda13e1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/e49b4963a5dcfbf8a02490b0dcda13e1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/13aca03fc3f7d46de21745b8756d158b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/13aca03fc3f7d46de21745b8756d158b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/a33ea287743baf2f2347133a05c3966e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/a33ea287743baf2f2347133a05c3966e/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/791df1898e8199a90570accf790e8f37/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /home/gustavo/.gradle/caches/transforms-2/files-2.1/791df1898e8199a90570accf790e8f37/AndroidManifest.xml:5:5-7:41
+INJECTED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/debug/AndroidManifest.xml
+INJECTED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/debug/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/debug/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/debug/AndroidManifest.xml
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/debug/AndroidManifest.xml:5:5-77
+	android:name
+		ADDED from /home/gustavo/Rocketseat/Bootcamp/Gympoint/gympointApp/android/app/src/debug/AndroidManifest.xml:5:22-75
