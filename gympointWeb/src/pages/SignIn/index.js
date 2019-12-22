@@ -1,7 +1,6 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
 import { Form, Input } from '@rocketseat/unform';
 import * as Yup from 'yup';
 
@@ -20,7 +19,7 @@ export default function SignIn() {
   const dispatch = useDispatch();
   const loading = useSelector(state => state.auth.loading);
 
-  // Nos parẫmetro de "handleSubmit", desestruturar "data" que vem do formulário
+  // Nos parâmetros de "handleSubmit", desestruturar 'data', que vem do formulário
   function handleSubmit({ email, password }) {
     dispatch(signInRequest(email, password));
   }

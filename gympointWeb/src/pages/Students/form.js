@@ -4,9 +4,7 @@ import { Input } from '@rocketseat/unform';
 import { MdArrowBack, MdCheck } from 'react-icons/md';
 import api from '~/services/api';
 
-import { request } from '~/store/modules/data/actions';
-
-import history from '~/services/history';
+import { goTo, removeAttributeFrom, handleSubmit } from '~/functions/general';
 
 export default function StudentsForm() {
   const dispatch = useDispatch();
@@ -29,41 +27,6 @@ export default function StudentsForm() {
     }
   }, [studentId]);
 
-  /*
-  function handleSubmit(studentFormData) {
-    const { name, email, age, weight, height } = studentFormData;
-    const action = studentId
-      ? updateStudentRequest(studentFormData)
-      : newStudentRequest({ name, email, age, weight, height });
-    dispatch(action);
-  } */
-
-  /*
-  function handleSubmit(formData) {
-    const { name, email, age, weight, height } = formData;
-    const action = studentId
-      ? request('UPDATE', 'students', {
-          id: studentId,
-          rest: { name, email, age, weight, height },
-        })
-      : request('CREATE', 'students', { name, email, age, weight, height });
-    dispatch(action);
-  } */
-
-  function handleSubmit(page, id, formData) {
-    const action = id
-      ? request('UPDATE', page, {
-          id,
-          formData,
-        })
-      : request('CREATE', page, formData);
-    dispatch(action);
-  }
-
-  function goTo(page) {
-    history.push(`/${page}`);
-  }
-
   return (
     <>
       <header>
@@ -79,13 +42,25 @@ export default function StudentsForm() {
           <button
             type='button'
             onClick={() =>
-              handleSubmit('students', studentId, {
-                name,
-                email,
-                age,
-                weight,
-                height,
-              })
+              handleSubmit(
+                dispatch,
+                'students',
+                studentId,
+                {
+                  name,
+                  email,
+                  age,
+                  weight,
+                  height,
+                },
+                [
+                  ['name', 'text'],
+                  ['email', 'email'],
+                  ['age', 'number'],
+                  ['weight', 'number'],
+                  ['height', 'number'],
+                ]
+              )
             }
           >
             <MdCheck size={16} color='#fff' /> SALVAR
@@ -108,6 +83,7 @@ export default function StudentsForm() {
                   height,
                 })
               }
+              onFocus={() => removeAttributeFrom('name')}
               value={name}
               name='name'
               id='name'
@@ -127,6 +103,7 @@ export default function StudentsForm() {
                   height,
                 })
               }
+              onFocus={() => removeAttributeFrom('email')}
               value={email}
               name='email'
               id='email'
@@ -137,7 +114,7 @@ export default function StudentsForm() {
               <label htmlFor='age'>
                 IDADE
                 <Input
-                  type='text'
+                  type='number'
                   onChange={event =>
                     setStudent({
                       id,
@@ -148,6 +125,7 @@ export default function StudentsForm() {
                       height,
                     })
                   }
+                  onFocus={() => removeAttributeFrom('age')}
                   value={age}
                   name='age'
                   id='age'
@@ -156,7 +134,7 @@ export default function StudentsForm() {
             </div>
             <div>
               <label htmlFor='weight'>
-                PESO
+                PESO (Kg)
                 <Input
                   type='text'
                   onChange={event =>
@@ -169,6 +147,7 @@ export default function StudentsForm() {
                       height,
                     })
                   }
+                  onFocus={() => removeAttributeFrom('weight')}
                   value={weight}
                   name='weight'
                   id='weght'
@@ -177,7 +156,7 @@ export default function StudentsForm() {
             </div>
             <div>
               <label htmlFor='height'>
-                ALTURA
+                ALTURA (m)
                 <Input
                   type='text'
                   onChange={event =>
@@ -190,6 +169,7 @@ export default function StudentsForm() {
                       height: event.target.value,
                     })
                   }
+                  onFocus={() => removeAttributeFrom('height')}
                   value={height}
                   name='height'
                   id='height'

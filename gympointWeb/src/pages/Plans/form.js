@@ -3,9 +3,7 @@ import { useDispatch } from 'react-redux';
 import { MdArrowBack, MdCheck } from 'react-icons/md';
 import api from '~/services/api';
 
-import { request } from '~/store/modules/data/actions';
-
-import history from '~/services/history';
+import { goTo, removeAttributeFrom, handleSubmit } from '~/functions/general';
 
 export default function PlansForm() {
   const dispatch = useDispatch();
@@ -30,49 +28,6 @@ export default function PlansForm() {
     }
   }, [planId]);
 
-  /* function handleSubmit(planFormData) {
-    const { title, duration, price } = planFormData;
-    const action = planId
-      ? updatePlanRequest(planFormData)
-      : newPlanRequest({ title, duration, price });
-    dispatch(action);
-  } */
-
-  /* function handleSubmit(formData) {
-    const { title, duration, price } = formData;
-    const action = planId
-      ? request('UPDATE', 'plans', {
-          id: planId,
-          rest: { title, duration, price },
-        })
-      : request('CREATE', 'plans', { title, duration, price });
-    dispatch(action);
-  } */
-
-  /* function handleSubmit(page, id, formData) {
-    const action = id
-      ? request('UPDATE', page, {
-          id,
-          rest: formData,
-        })
-      : request('CREATE', page, formData);
-    dispatch(action);
-  } */
-
-  function handleSubmit(page, id, formData) {
-    const action = id
-      ? request('UPDATE', page, {
-          id,
-          formData,
-        })
-      : request('CREATE', page, formData);
-    dispatch(action);
-  }
-
-  function goTo(page) {
-    history.push(`/${page}`);
-  }
-
   return (
     <>
       <header>
@@ -88,7 +43,17 @@ export default function PlansForm() {
           <button
             type='button'
             onClick={() =>
-              handleSubmit('plans', planId, { title, duration, price })
+              handleSubmit(
+                dispatch,
+                'plans',
+                planId,
+                { title, duration, price },
+                [
+                  ['title', 'text'],
+                  ['duration', 'number'],
+                  ['price', 'text'],
+                ]
+              )
             }
           >
             <MdCheck size={16} color='#fff' /> SALVAR
@@ -107,6 +72,7 @@ export default function PlansForm() {
                 price,
               })
             }
+            onFocus={() => removeAttributeFrom('title')}
             value={title}
             type='text'
             name='title'
@@ -124,8 +90,9 @@ export default function PlansForm() {
                     price,
                   })
                 }
+                onFocus={() => removeAttributeFrom('duration')}
                 value={duration}
-                type='text'
+                type='number'
                 name='duration'
                 id='duration'
               />
@@ -142,6 +109,7 @@ export default function PlansForm() {
                   })
                 }
                 value={price}
+                onFocus={() => removeAttributeFrom('price')}
                 type='text'
                 name='price'
                 id='price'

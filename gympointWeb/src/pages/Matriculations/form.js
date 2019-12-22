@@ -1,32 +1,22 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 
 import { format, parseISO, addMonths } from 'date-fns';
-import { zonedTimeToUtc } from 'date-fns-tz';
 import pt from 'date-fns/locale/pt';
 
 import { MdArrowBack, MdCheck } from 'react-icons/md';
 
 import api from '~/services/api';
 
-import { request } from '~/store/modules/data/actions';
-
-import history from '~/services/history';
+import { goTo, removeAttributeFrom, handleSubmit } from '~/functions/general';
+import { today } from '~/functions/matriculation';
 
 export default function Form() {
   const dispatch = useDispatch();
 
   const [students, setStudents] = useState([]);
   const [toggleDisplay, setToggleDisplay] = useState('none');
-
-  const today = format(
-    zonedTimeToUtc(new Date(), 'Europe/London'),
-    'yyyy-MM-dd',
-    {
-      locale: pt,
-    }
-  );
-
   const [matriculation, setMatriculation] = useState([]);
 
   const {
@@ -101,10 +91,6 @@ export default function Form() {
     }
   }, [getMatriculationId]);
 
-  function goTo(page) {
-    history.push(`/${page}`);
-  }
-
   function formatEndDate(refDate, planDuration) {
     return format(addMonths(new Date(refDate), planDuration), 'yyyy-MM-dd');
   }
@@ -129,11 +115,6 @@ export default function Form() {
     const response = await api.get(`students${queryParamsName}`);
 
     setStudents(response.data);
-    // if (response.data.length === 0) setToggleDisplay('none');
-    // response.data.length === 0
-    // ? setToggleDisplay('none')
-    // : setToggleDisplay('block');
-
     if (name === '' || response.data.length === 0) {
       setToggleDisplay('none');
     } else {
@@ -156,7 +137,9 @@ export default function Form() {
     });
   }
 
-  function handleKeyPress(key, inputType) {
+  // Não usei o 'React Select', resolvi criar um autocomplete personalizado com uma função chamada 'selectSuggestion'
+  // Mais comentários sobre esta função no arquivo 'store/modules/data/matriculations.js'
+  function selectSuggestion(key, inputType) {
     const alfabet = /^[a-zA-Z]$/;
     const specialKeys = ['Enter', 'Backspace', ' '];
 
@@ -181,16 +164,6 @@ export default function Form() {
     }
   }
 
-  function handleSubmit(page, id, formData) {
-    const action = id
-      ? request('UPDATE', page, {
-          id,
-          formData,
-        })
-      : request('CREATE', page, formData);
-    dispatch(action);
-  }
-
   return (
     <>
       <header>
@@ -206,11 +179,20 @@ export default function Form() {
           <button
             type='button'
             onClick={() =>
-              handleSubmit('matriculations', matriculationId, {
-                student_id: studentId,
-                plan_id: planId,
-                start_date: `${start_dateFormated}T03:00:01.000Z`,
-              })
+              handleSubmit(
+                dispatch,
+                'matriculations',
+                matriculationId,
+                {
+                  student_id: studentId,
+                  plan_id: planId,
+                  start_date: `${start_dateFormated}T03:00:01.000Z`,
+                },
+                [
+                  ['studentNameInput', 'text'],
+                  ['planSelect', 'select'],
+                ]
+              )
             }
           >
             <MdCheck size={16} color='#fff' /> SALVAR
@@ -227,7 +209,7 @@ export default function Form() {
             type='text'
             name='studentNameInput'
             id='studentNameInput'
-            onChange={function(event) {
+            onChange={event => {
               setMatriculation({
                 active,
                 matriculationId,
@@ -242,14 +224,17 @@ export default function Form() {
               });
               loadStudents(event.target.value);
             }}
-            onKeyDown={event => handleKeyPress(event.key, 'text')}
+            onFocus={() => removeAttributeFrom('studentNameInput')}
+            onKeyDown={event => selectSuggestion(event.key, 'text')}
           />
           <select
             style={{ display: toggleDisplay }}
+            name='studentsList'
             id='studentsList'
+            onFocus={() => removeAttributeFrom('studentsList')}
             onBlur={() => setToggleDisplay('none')}
             onChange={event => mudarValor(JSON.parse(event.target.value))}
-            onKeyDown={event => handleKeyPress(event.key, 'select')}
+            onKeyDown={event => selectSuggestion(event.key, 'select')}
             size={students.length < 2 ? '2' : students.length}
           >
             {students.map(student => (
@@ -268,7 +253,8 @@ export default function Form() {
               <label htmlFor='name'>PLANO</label>
               <select
                 id='planSelect'
-                name='plans'
+                name='planSelect'
+                onFocus={() => removeAttributeFrom('planSelect')}
                 onChange={event =>
                   handleEvent(
                     JSON.parse(event.target.value),
@@ -276,7 +262,7 @@ export default function Form() {
                   )
                 }
               >
-                <option>Selecione</option>
+                <option value=''>Selecione</option>
                 {plans.map(plan => (
                   <option
                     selected={
@@ -297,6 +283,8 @@ export default function Form() {
                 type='date'
                 value={start_dateFormated || today}
                 name='startDateInput'
+                id='startDateInput'
+                onFocus={() => removeAttributeFrom('startDateInput')}
                 onChange={event =>
                   setMatriculation({
                     active,

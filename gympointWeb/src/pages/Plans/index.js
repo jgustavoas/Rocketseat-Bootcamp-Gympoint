@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { MdAdd } from 'react-icons/md';
 import api from '~/services/api';
 
-import { request } from '~/store/modules/data/actions';
+import { deleteItem } from '~/functions/general';
 
 import history from '~/services/history';
 
@@ -17,19 +17,14 @@ export default function Plans() {
     setPlans(response.data);
   }
 
+  const callback = () => loadPlans();
+
   useEffect(() => {
     loadPlans();
   }, []);
 
   function goTo(page) {
     history.push(`/${page}`);
-  }
-
-  function deletePlan(id, name) {
-    if (window.confirm(`Apagar o plano ${name}?`)) {
-      dispatch(request('DELETE', 'plans', id));
-    }
-    loadPlans();
   }
 
   return (
@@ -65,7 +60,15 @@ export default function Plans() {
                     editar
                   </button>
                   <button
-                    onClick={() => deletePlan(plan.id, plan.title)}
+                    onClick={() =>
+                      deleteItem(
+                        `plano ${plan.title}`,
+                        plan.id,
+                        dispatch,
+                        'plans',
+                        callback
+                      )
+                    }
                     type='button'
                     className='redMinimalButton'
                   >

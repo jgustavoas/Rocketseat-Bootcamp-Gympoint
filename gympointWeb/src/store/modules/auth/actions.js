@@ -1,14 +1,14 @@
 export function signUpRequest(name, email, password) {
   return {
     type: '@auth/SIGN_UP_REQUEST',
-    payload: { name, email, password }, // Método do Diego para armazenar os dados da request num objeto que ele chama de "payload"
+    payload: { name, email, password },
   };
 }
 
 export function signInRequest(email, password) {
   return {
     type: '@auth/SIGN_IN_REQUEST',
-    payload: { email, password }, // Método do Diego para armazenar os dados da request num objeto que ele chama de "payload"
+    payload: { email, password },
   };
 }
 
@@ -19,7 +19,7 @@ export function signInSuccess(token, user) {
   };
 }
 
-// Uma terceira action chamada de "signFailure",  sem "In" ou "Up" pois serve para ambos
+// Uma terceira action chamada de 'signFailure',  sem 'In' ou 'Up' pois serve para ambos.
 export function signFailure() {
   return {
     type: '@auth/SIGN_FAILURE',

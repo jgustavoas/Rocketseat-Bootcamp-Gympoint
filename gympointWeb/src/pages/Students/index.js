@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { MdAdd } from 'react-icons/md';
 import api from '~/services/api';
 
-import { request } from '~/store/modules/data/actions';
+import { deleteItem } from '~/functions/general';
 
 import history from '~/services/history';
 
@@ -18,26 +18,14 @@ export default function Students() {
     setStudents(response.data);
   }
 
+  const callback = () => loadStudents();
+
   useEffect(() => {
     loadStudents();
   }, []);
 
   function goTo(page) {
     history.push(`/${page}`);
-  }
-
-  /* function deleteStudent(id, name) {
-    if (window.confirm(`Apagar o cadastro do aluno ${name} (id ${id})?`)) {
-      dispatch(deleteStudentRequest(id));
-    }
-    loadStudents();
-  } */
-
-  function deleteStudent(id, name) {
-    if (window.confirm(`Apagar o cadastro do aluno ${name}?`)) {
-      dispatch(request('DELETE', 'students', id));
-    }
-    loadStudents();
   }
 
   return (
@@ -83,7 +71,15 @@ export default function Students() {
                   </button>
                   <button
                     type='button'
-                    onClick={() => deleteStudent(student.id, student.name)}
+                    onClick={() =>
+                      deleteItem(
+                        `cadastro do aluno ${student.name}`,
+                        student.id,
+                        dispatch,
+                        'students',
+                        callback
+                      )
+                    }
                     className='redMinimalButton'
                   >
                     apagar

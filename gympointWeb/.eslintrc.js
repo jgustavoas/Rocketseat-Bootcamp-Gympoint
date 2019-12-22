@@ -37,7 +37,8 @@ module.exports = {
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "no-shadow": "off",
-    "no-unused-expressions": "off"
+    "no-unused-expressions": "off",
+    "array-callback-return": "off"
   },
   settings: {
     "import/resolver": {

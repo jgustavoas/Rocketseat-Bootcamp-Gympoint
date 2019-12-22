@@ -6,7 +6,7 @@ import pt from 'date-fns/locale/pt';
 import { MdAdd, MdCheckCircle } from 'react-icons/md';
 import api from '~/services/api';
 
-import { request } from '~/store/modules/data/actions';
+import { deleteItem } from '~/functions/general';
 
 import history from '~/services/history';
 
@@ -33,19 +33,14 @@ export default function Plans() {
     setMatriculations(matriculationsData);
   }
 
+  const callback = () => loadMatriculations();
+
   useEffect(() => {
     loadMatriculations();
   }, []);
 
   function goTo(page) {
     history.push(`/${page}`);
-  }
-
-  function deleteMatriculation(id, name) {
-    if (window.confirm(`Apagar a matrícula de ${name}?`)) {
-      dispatch(request('DELETE', 'matriculations', id));
-    }
-    loadMatriculations();
   }
 
   return (
@@ -96,9 +91,12 @@ export default function Plans() {
                   <button
                     type='button'
                     onClick={() =>
-                      deleteMatriculation(
+                      deleteItem(
+                        `matrícula do aluno ${matriculation.students.name}`,
                         matriculation.students.id,
-                        matriculation.students.name
+                        dispatch,
+                        'matriculations',
+                        callback
                       )
                     }
                     className='redMinimalButton'

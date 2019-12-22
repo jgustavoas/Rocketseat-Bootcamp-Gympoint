@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { format, parseISO } from 'date-fns';
 import pt from 'date-fns/locale/pt';
 
 import api from '~/services/api';
 
-import { request } from '~/store/modules/data/actions';
+import { removeAttributeFrom, handleSubmit } from '~/functions/general';
+import { dispatchToggle, displayToggleSwitch } from '~/functions/helporders';
 
-export default function Dashboard() {
+export default function HelpOrders() {
   const dispatch = useDispatch();
 
   const [helpOrders, setHelpOrders] = useState([]);
@@ -23,7 +24,9 @@ export default function Dashboard() {
   const { mongoID, studentName, studentQuestion, questionDate } = student;
   const [answer, setAnswer] = useState('');
 
-  const [disabled, setDisabled] = useState(false);
+  const disabled = useSelector(state => state.data.disabled);
+
+  const callback = () => setAnswer('');
 
   const questionDateFormat = format(
     parseISO(questionDate),
@@ -42,29 +45,6 @@ export default function Dashboard() {
     loadHelpOrders();
   }, []);
 
-  function displayToggleSwitch(hiding, showing) {
-    const toHide = document.getElementById(hiding);
-    const toShow = document.getElementById(showing);
-
-    toShow.style.display = 'block';
-    toHide.style.display = 'none';
-
-    setAnswer('');
-    if (disabled) setDisabled(false);
-  }
-
-  function handleSubmit(page, id, formData) {
-    const action = id
-      ? request('UPDATE', page, {
-          id,
-          formData,
-        })
-      : request('CREATE', page, formData);
-    dispatch(action);
-
-    setDisabled(true);
-  }
-
   return (
     <>
       <header>
@@ -76,15 +56,23 @@ export default function Dashboard() {
           <h2>{studentName} perguntou:</h2>
           <p>{studentQuestion}</p>
           <textarea
+            id='answerText'
+            name='answerText'
             value={answer}
             disabled={disabled}
+            onClick={() => dispatchToggle(false, dispatch)}
             onChange={event => setAnswer(event.target.value)}
+            onFocus={() => removeAttributeFrom('answerText')}
             placeholder='Resposta da equipe Gympoint...'
           />
           <div>
             <button
               disabled={disabled}
-              onClick={() => handleSubmit('help-orders', mongoID, { answer })}
+              onClick={() => {
+                handleSubmit(dispatch, 'help-orders', mongoID, { answer }, [
+                  ['answerText', 'textarea'],
+                ]);
+              }}
               type='button'
             >
               Enviar a resposta
@@ -92,9 +80,14 @@ export default function Dashboard() {
             <button
               className='greyButton'
               type='button'
-              onClick={function() {
+              onClick={() => {
                 loadHelpOrders();
-                displayToggleSwitch('helpOrderForm', 'helpOrderTable');
+                displayToggleSwitch(
+                  'helpOrderForm',
+                  'helpOrderTable',
+                  dispatch,
+                  callback
+                );
               }}
             >
               Voltar para todos os pedidos
@@ -112,8 +105,13 @@ export default function Dashboard() {
                 <td style={{ width: '100%' }}>{helpOrder.student}</td>
                 <td>
                   <button
-                    onClick={function() {
-                      displayToggleSwitch('helpOrderTable', 'helpOrderForm');
+                    onClick={() => {
+                      displayToggleSwitch(
+                        'helpOrderTable',
+                        'helpOrderForm',
+                        dispatch,
+                        callback
+                      );
                       setStudent({
                         read: helpOrder.read,
                         mongoID: helpOrder._id,

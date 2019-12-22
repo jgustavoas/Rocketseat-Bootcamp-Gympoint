@@ -10,21 +10,21 @@ export function* signIn({ payload }) {
   try {
     const { email, password } = payload;
 
-    /* Chamar a api (função "call") com o método indicado no primeiro parâmetro,
-     com a url como segundo parâmetro (neste caso "sessions", como no Insomnia),
-     e os dados passados à requsição como objeto no terceiro parâmetro ("email" e "password", como no Insomnia)
-  */
+    /* Chamar a api (função 'call') com o método indicado no primeiro parâmetro,
+       tendo a url como segundo parâmetro (neste caso 'sessions', como no Insomnia),
+       e os dados passados à requsição como objeto no terceiro parâmetro ("email" e "password", como no Insomnia)
+    */
     const response = yield call(api.post, 'sessions', {
       email,
       password,
     });
 
-    // Se a chamada funcionar, obter o token e os dados do usuário
+    // Se a chamada funcionar, obter o token e os dados do usuário.
     const { token, user } = response.data;
 
     api.defaults.headers.Authorization = `Bearer ${token}`;
 
-    // Se passar na conferência do tipo de usuário, por os dados ("put") na action signInSuccess
+    // Se passar na conferência, por os dados ("put") na action signInSuccess
     yield put(signInSuccess(token, user));
 
     history.push('/students');
@@ -68,7 +68,7 @@ export function signOut() {
 }
 
 export default all([
-  takeLatest('persist/REHYDRATE', setToken), // Persistir o token e manter autenticada a navegação
+  takeLatest('persist/REHYDRATE', setToken), // Persistir o token e manter autenticada a navegação.
   takeLatest('@auth/SIGN_IN_REQUEST', signIn),
   takeLatest('@auth/SIGN_UP_REQUEST', signUp),
   takeLatest('@auth/SIGN_OUT', signOut),

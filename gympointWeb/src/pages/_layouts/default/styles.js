@@ -125,6 +125,14 @@ export const Container = styled.div`
         font-family: Arial, Helvetica, sans-serif;
         font-size: 14px;
         padding: 4px;
+
+        &.invalid {
+          border: 1px solid red;
+          color: red;
+          &::placeholder {
+            color: red;
+          }
+        }
       }
 
       input,
@@ -138,6 +146,14 @@ export const Container = styled.div`
         padding: 0 5px;
         color: rgba(0, 0, 0, 0.5);
         margin: 0 0 20px;
+
+        &.invalid {
+          border: 1px solid red;
+          color: red;
+          &::placeholder {
+            color: red;
+          }
+        }
 
         &::placeholder {
           color: rgba(0, 0, 0, 0.5);

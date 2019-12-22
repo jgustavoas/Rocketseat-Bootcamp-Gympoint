@@ -30,7 +30,7 @@ export default function auth(state = INITIAL_STATE, action) {
         draft.signed = false;
         break;
       }
-      default: // O default dessa condicional "switch" não precisa retornar algo
+      default: // O default desta condicional de switch() não precisa retornar algo
     }
   });
 }
