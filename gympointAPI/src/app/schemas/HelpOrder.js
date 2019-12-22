@@ -5,7 +5,7 @@ const HelpOrderSchema = new mongoose.Schema(
     /**
      * Definindo os campos do schema ("tabela")
      * Observar que são usados os primitivos do JS para indicar o tipo dos campos
-     * ao invés de TEXT, INTEGER etc natural dos db en SQL
+     * ao invés de TEXT, INTEGER etc, que são naturais dos db en SQL
      * */
     question: {
       type: String,

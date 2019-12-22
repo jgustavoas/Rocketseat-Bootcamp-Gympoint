@@ -4,8 +4,6 @@ import Student from '../models/Student';
 import HelpOrder from '../models/HelpOrder';
 import HelpOrderSchema from '../schemas/HelpOrder';
 
-// import Mail from '../../lib/Mail'; usando dentro com a biblioteca Queue
-
 import HelpOrderReplyMail from '../jobs/HelpOrderReplyMail';
 import Queue from '../../lib/Queue';
 
@@ -64,8 +62,6 @@ class HelpOrderController {
   }
 
   async reply(req, res) {
-    // No mongoDB a parte de ordenação, os limites de exibição etc. dos resultados é feita...
-    // ...com uma sequência de métodos encadeados ("chaining") por pontos.
     const pedidoDeAjuda = await HelpOrderSchema.findOne({
       read: false,
       _id: req.params.id,
@@ -74,21 +70,6 @@ class HelpOrderController {
     const { question_id } = pedidoDeAjuda;
 
     const { answer } = req.body;
-
-    // Logo abaixo: "const enviarResposta" foi substituido pelo "job" na Queue na da linha 110
-    /* const enviarResposta = await Mail.sendMail({
-      to: `${student} <${email}>`,
-      subject: `Resposta da sua dúvida #${question_id}`,
-      template: 'replyHelpOrder',
-      context: {
-        student,
-        question,
-        answer,
-        date: format(createdAt, "'dia' dd 'de' MMMM', às' H:mm'h'", {
-          locale: pt,
-        }),
-      },
-    }); */
 
     const enviarResposta = await Queue.add(HelpOrderReplyMail.key, {
       pedidoDeAjuda,

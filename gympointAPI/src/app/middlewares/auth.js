@@ -18,10 +18,8 @@ export default async (req, res, next) => {
   try {
     const decoded = await promisify(jwt.verify)(token, authConfig.secret);
 
-    // console.log(decoded);
-
     // Incluindo a id do usuário na requisição. Note que é a req, não a res.
-    // Assim para passar a id do usuário JÁ LOGADO através do middleware de autenticação ao invés de pela URL
+    // Assim dá para passar a id do usuário JÁ LOGADO através do middleware de autenticação ao invés de pela URL
     req.userId = decoded.id;
 
     return next();

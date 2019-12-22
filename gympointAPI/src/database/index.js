@@ -51,10 +51,10 @@ class Database {
         useUnifiedTopology: true,
       }
       /**
-       * O motivo de usar o terceiro parâmetro acima, não mecionado pelo Diego foi a mensagem abaixo:
-       * (node:5005) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated,
+       * O motivo de usar o terceiro parâmetro acima foi a mensagem abaixo:
+       * "(node:5005) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated,
        * and will be removed in a future version. To use the new Server Discover and Monitoring engine,
-       * pass option { useUnifiedTopology: true } to the MongoClient constructor.
+       * pass option { useUnifiedTopology: true } to the MongoClient constructor."
        */
     );
   }

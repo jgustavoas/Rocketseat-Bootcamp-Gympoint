@@ -1,6 +1,4 @@
 // Usa-se o formato abaixo porque esse pacote chamado Yup não possui "export default"
-// O asterisco significa que vai ser importado tudo do pacote e colocado na variável
-// O pacote Yup é usado para validação
 import * as Yup from 'yup';
 import { Op } from 'sequelize';
 import Student from '../models/Student';
@@ -100,8 +98,6 @@ class StudentController {
 
     const { email } = req.body;
 
-    // Procurando um aluno com a id obtida na requisição
-    // findByPk significa procurar pela Primary Key, neste caso a id do aluno
     const aluno = await Student.findByPk(req.params.id);
 
     if (email !== aluno.email) {

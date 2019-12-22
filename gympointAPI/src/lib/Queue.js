@@ -20,7 +20,7 @@ class Queue {
    * O método que vai realizar a tarefa é nomeado de "handle", que neste caso é o envio do e-mail   */
   init() {
     jobs.forEach(({ key, handle }) => {
-      // Por que forEach e não map()? Porque não precisa retornar algo
+      // Por que forEach e não map()? Porque não precisa retornar algo.
       this.queues[key] = {
         bee: new Bee(key, {
           redis: redisConfig,

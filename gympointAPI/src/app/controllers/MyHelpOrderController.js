@@ -1,13 +1,6 @@
-import { format } from 'date-fns';
-import pt from 'date-fns/locale/pt';
 import Student from '../models/Student';
 import HelpOrder from '../models/HelpOrder';
 import HelpOrderSchema from '../schemas/HelpOrder';
-
-// import Mail from '../../lib/Mail'; usando dentro com a biblioteca Queue
-
-import Queue from '../../lib/Queue';
-import HelpOrderReplyMail from '../jobs/HelpOrderReplyMail';
 
 class MyHelpOrderController {
   async index(req, res) {

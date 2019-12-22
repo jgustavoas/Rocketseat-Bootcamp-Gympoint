@@ -7,7 +7,6 @@ class User extends Model {
       {
         name: Sequelize.STRING,
         email: Sequelize.STRING,
-        // A propriedade VIRTUAL é usada temporariamente e sua informação não é lançada no db
         password: Sequelize.VIRTUAL,
         password_hash: Sequelize.STRING,
       },
@@ -15,11 +14,11 @@ class User extends Model {
     );
 
     // Esta função addHook é usada para executar um código em determinado momento.
-    // Neste caso, "antes de salvar" as informações no banco de dados criptogtafamos a senha.
+    // Neste caso, "antes de salvar" as informações no banco de dados, criptogtafamos a senha.
     this.addHook('beforeSave', async user => {
       if (user.password) {
-        // Na função hash do bycript, o primeiro segundo argumento indica a força da criptografia.
-        // O número 8 é razoável, números maiores deixariam a aplicação lenta.
+        // Na função hash do bycript, o segundo argumento indica a força da criptografia.
+        // O número 8 é razoável, números maiores deixam a aplicação mais lenta.
         user.password_hash = await bcrypt.hash(user.password, 8);
       }
     });

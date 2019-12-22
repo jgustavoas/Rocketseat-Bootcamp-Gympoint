@@ -64,28 +64,7 @@ class CheckinController {
     });
 
     if (checkins.length > 0) {
-      /* const ordenarDatas = checkins.sort(function(a, b) {
-        return b.id - a.id;
-      });
-
-      const ultimoCheckin = ordenarDatas[0].createdAt; */
-
-      const ultimoCheckin = checkins[0].createdAt;
-
-      const intervalo = eachDayOfInterval({
-        start: ultimoCheckin,
-        end: new Date(),
-      });
-
-      // console.log(`Intervalo:${intervalo}`);
-      console.log(checkins[0].createdAt);
-
       const quantosCheckins = checkins.length;
-      const quantosDiasIntervalo = intervalo.length;
-
-      console.log(
-        `Nº checkins: ${quantosCheckins} / Intervalo: ${quantosDiasIntervalo}`
-      );
 
       if (quantosCheckins === 5) {
         const intervalo4 = eachDayOfInterval({
@@ -105,11 +84,6 @@ class CheckinController {
           end: checkins[0].createdAt,
         });
 
-        console.log(intervalo4.length);
-        console.log(intervalo3.length);
-        console.log(intervalo2.length);
-        console.log(intervalo1.length);
-
         if (
           intervalo4.length <= 2 &&
           intervalo3.length <= 2 &&
@@ -120,22 +94,7 @@ class CheckinController {
             impedido: `Você já fez 5 checkins dentro de cinco dias seguidos!`,
           });
         }
-
-        console.log(`O quinto último checkin: ${checkins[4].createdAt}`);
-        console.log(`O último checkin: ${checkins[0].createdAt}`);
-
-        /* if (intervalo2.length <= 8) {
-          return res.status(401).json({
-            impedido: `Intervalo:${intervalo.length} | Você já fez 5 checkins dentro de cinco dias seguidos!`,
-          });
-        } */
       }
-
-      /* if (quantosCheckins === 5 && quantosDiasIntervalo <= 1) {
-        return res.status(401).json({
-          impedido: `Intervalo:${intervalo.length} | Você já fez ${quantosCheckins} checkins em dias seguidos!`,
-        });
-      } */
 
       await Checkin.create({ student_id: id });
 
