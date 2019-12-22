@@ -2,7 +2,7 @@ import produce from 'immer';
 
 const INITIAL_STATE = {
   checkins: null,
-}; // Apenas preferência do Diego criar essa variável como objeto para escrever menos no parãmetro da função "auth" logo abaixo
+};
 
 export default function user(state = INITIAL_STATE, action) {
   return produce(state, draft => {

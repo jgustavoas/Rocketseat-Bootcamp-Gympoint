@@ -7,7 +7,6 @@ export function* doChekin({ payload }) {
   try {
     const { id } = payload;
 
-    // const response = yield call(api.post, `students/${id}/checkins`);
     yield call(api.post, `students/${id}/checkins`);
 
     Alert.alert('Sucesso', 'Check-in realizado');
@@ -18,7 +17,6 @@ export function* doChekin({ payload }) {
 
     if (checkins) {
       yield put(checkInSuccess(checkins));
-      console.log(checkins);
     }
   } catch (err) {
     Alert.alert('Falha na atualização', 'Verifique seus dados');
@@ -26,7 +24,4 @@ export function* doChekin({ payload }) {
   }
 }
 
-export default all([
-  // Quando a action '@user/UPDATE_PROFILE_REQUEST' for despachada, executar um saga chamado "updateProfile"
-  takeLatest('@user/DO_CHECKIN', doChekin),
-]);
+export default all([takeLatest('@user/DO_CHECKIN', doChekin)]);

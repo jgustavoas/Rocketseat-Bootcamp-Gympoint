@@ -22,7 +22,6 @@ import Background from '~/components/Background';
 import api from '~/services/api';
 
 function HelpOrder({ isFocused, navigation }) {
-  // console.log(navigation.state.params.hoId);
   const id = useSelector(state => state.auth.id);
 
   const { hoId } = navigation.state.params;

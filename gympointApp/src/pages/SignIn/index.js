@@ -25,7 +25,7 @@ export default function SignIn() {
       <Form>
         <FormInput
           keyboardType="numeric"
-          placeholder="Informe seu ID de cadastro"
+          placeholder="Informe o ID da sua matrícula"
           returnKeyType="send"
           onSubmitEditing={handleSubmit}
           value={matriculation}

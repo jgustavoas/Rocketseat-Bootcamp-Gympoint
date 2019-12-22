@@ -1,4 +1,4 @@
-import React from 'react'; // Todo arquivo que usa JSX precisa importar o React (arqui o ícone de "TabBarIcon" do grupo de páginas "New").
+import React from 'react'; // Todo arquivo que usa JSX precisa importar o React
 import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
 import { createStackNavigator } from 'react-navigation-stack';
@@ -92,7 +92,7 @@ export default (signedIn = false) =>
                 }
               ),
               navigationOptions: {
-                tabBarVisible: true, // Esconder a aba quando se estiver navegando dentro das páginas do grupo "New", ao clicar em "Agendar"
+                tabBarVisible: true,
                 tabBarLabel: 'Pedir Ajuda',
                 tabBarIcon: ({ tintColor }) => (
                   <Icon name="live-help" size={20} color={tintColor} />
@@ -127,7 +127,7 @@ export default (signedIn = false) =>
                 }
               ),
               navigationOptions: {
-                tabBarVisible: true, // Esconder a aba quando se estiver navegando dentro das páginas do grupo "New", ao clicar em "Agendar"
+                tabBarVisible: true,
                 tabBarLabel: 'Sair',
                 tabBarIcon: ({ tintColor }) => (
                   <Icon name="exit-to-app" size={20} color={tintColor} />

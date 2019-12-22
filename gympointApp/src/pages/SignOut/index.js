@@ -1,14 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import { Text } from 'react-native';
+import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { withNavigationFocus } from 'react-navigation';
 
-import { parseISO, formatRelative } from 'date-fns';
-import pt from 'date-fns/locale/pt';
-
 import { signOut } from '~/store/modules/auth/actions';
-
-import api from '~/services/api';
 
 import { Container, CheckinButton } from './styles';
 

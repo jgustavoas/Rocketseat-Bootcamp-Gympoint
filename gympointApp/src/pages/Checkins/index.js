@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Alert } from 'react-native';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { withNavigationFocus } from 'react-navigation';
 
 import { parseISO, formatRelative } from 'date-fns';
 import pt from 'date-fns/locale/pt';
-
-import { signOut } from '~/store/modules/auth/actions';
 
 import api from '~/services/api';
 
@@ -27,11 +25,7 @@ function Checkins({ isFocused }) {
   const [checkins, setCheckins] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  const dispatch = useDispatch();
-
   const buttonText = `Novo check-in`;
-
-  // const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
   async function loadCheckins(student_id) {
     const response = await api.get(`students/${student_id}/checkins`);
