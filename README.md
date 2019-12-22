@@ -1,6 +1,6 @@
 # RocketSeat-Bootcamp-Gympoint
 Entrega do desafio final<br/>
-<p style="color: blue;">Branch de backup do primeiro commit</p>
+<p style="color: #0000cc;">Branch de backup do primeiro commit</p>
 <hr />
 Apenas versão Android do app.
 
