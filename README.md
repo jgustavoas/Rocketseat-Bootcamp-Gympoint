@@ -46,13 +46,14 @@ Com o terminal aberto do diretório `gympointAPI`, execute o seguinte comando:
 ```javascript
 $ npx sequelize-cli db:seed:all
 ```
-
-A aplicação está pronta para rodar!
+<br/>
+###### A aplicação está pronta para rodar! <br/>Agora é só iniciar os servidores e, a aplicação web e o app.
+<br/>
 
 ### Iniciando os servidores
 A aplicação funciona com dois servidores em execução:
 1. O principal, dos bancos de dados Postgres e Mongo;
-1. O secundário, das filas ("***queues***") de trabalhos em segundo plano, para envio de e-mail e uso do banco de dado Redis.
+1. O secundário, das filas ("***queues***") de trabalhos em segundo plano, para envio de e-mail e uso do banco de dados Redis.
 
 No terminal, mude para a pasta `gympointAPI` e inicie o servidor principal com o comando:
 ```bash
@@ -74,7 +75,7 @@ Para o servidor secundário, abra um novo terminal no mesmo diretório e execute
 ```bash
 $ yarn queue
 ```
-A seguinte mensagem como esta deve aparecer:
+Uma mensagem como esta deve aparecer:
 ```
 yarn run v<número da versão do yarn>
 $ nodemon --inspect src/queue.js
@@ -85,4 +86,16 @@ $ nodemon --inspect src/queue.js
 [nodemon] starting `node -r sucrase/register --inspect src/queue.js`
 Debugger listening on ws://127.0.0.1:9229/a42a1802-5728-4ad1-b615-d3525245b409
 For help, see: https://nodejs.org/en/docs/inspector
+```
+
+### Iniciando Gympoint Web
+Abra uma aba do terminal, mude para a pasta `gympointWeb` e lá execute o comando:
+```javascript
+$ yarn start
+```
+
+### Iniciando Gympoint App
+Abra uma aba do terminal, mude para a pasta `gympointApp` e lá execute o comando:
+```javascript
+$ react-native run-android
 ```
