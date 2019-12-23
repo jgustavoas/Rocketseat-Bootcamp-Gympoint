@@ -75,7 +75,7 @@ $ nodemon src/server.js
 Executing (default): SELECT 1+1 AS result
 Conectado ao banco de dados com sucesso.
 ```
-Para o servidor secundário, abra um novo terminal no mesmo diretório e execute:
+Para o servidor secundário, abra uma nova aba do terminal no mesmo diretório e execute:
 ```bash
 $ yarn queue
 ```
@@ -93,14 +93,14 @@ For help, see: https://nodejs.org/en/docs/inspector
 ```
 
 ### Iniciando Gympoint Web
-Abra uma aba do terminal, mude para a pasta `gympointWeb` e lá execute o comando:
+Abra uma aba do terminal na pasta `gympointWeb` e lá execute o comando:
 ```javascript
 $ yarn start
 ```
 O Gympoint Web roda no navegador em `http://localhost:3000/`
 
 ### Iniciando Gympoint App
-Inicie seu emulador Android, abra uma nova aba do terminal, mude para a pasta `gympointApp` e execute o comando:
+Inicie seu emulador Android, abra um terminal na pasta `gympointApp` e execute o comando:
 ```javascript
 $ react-native run-android
 ```
