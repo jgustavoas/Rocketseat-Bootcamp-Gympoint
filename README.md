@@ -7,7 +7,7 @@ O Yarn foi usado como o gerenciador de pacotes de toda a aplicação.
 
 ------------
 
-## Instalação
+## Instalando a aplicação
 Baixe o repositório numa pasta de sua preferência.
 
 ### Preparando o back-end com o Docker
@@ -52,9 +52,9 @@ $ npx sequelize-cli db:seed:all
 ###### Agora a aplicação está pronta para testar! 
 
 ------------
+## Testando a aplicação
 
-
-## Iniciando os servidores
+### Iniciando os servidores
 A aplicação funciona com dois servidores em execução:
 1. O principal, dos bancos de dados Postgres e Mongo;
 1. O secundário, das filas ("***queues***") de trabalhos em segundo plano, para envio de e-mail e uso do banco de dados Redis.
@@ -97,10 +97,10 @@ Abra uma aba do terminal, mude para a pasta `gympointWeb` e lá execute o comand
 ```javascript
 $ yarn start
 ```
-O Gympoint Web roda em `http://localhost:3000/`
+O Gympoint Web roda no navegador em `http://localhost:3000/`
 
 ### Iniciando Gympoint App
-Abra uma nova aba do terminal, mude para a pasta `gympointApp` e execute o comando:
+Inicie seu emulador Android, abra uma nova aba do terminal, mude para a pasta `gympointApp` e execute o comando:
 ```javascript
 $ react-native run-android
 ```
