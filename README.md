@@ -7,7 +7,7 @@ O Yarn foi usado como o gerenciador de pacotes de toda a aplicação.
 
 ------------
 
-## # Instalação
+## Instalação
 Baixe o repositório numa pasta de sua preferência.
 
 ### Preparando o back-end
