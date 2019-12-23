@@ -3,15 +3,16 @@ Entrega do desafio final (apenas versão Android da versão mobile)
 
 Desenvolvido em ambiente Linux, inicialmente usando o sistema operacional <b>Solus 4.0</b> e finalizado no sistema operacional <b>Linux Lite 4.6</b>.
 
-Gerenciador de pacotes de toda a aplicação: yarn
+O Yarn foi usado como o gerenciador de pacotes de toda a aplicação.
 
 ------------
 
-## # Instalação
+## Instalação
 Baixe o repositório numa pasta de sua preferência.
 
 ### Preparando o back-end
 1. Abra o terminal e instale via Docker os *conteiners* para os bancos de dados Postgres, Mongo e Redis conforme abaixo. Se preferir, use outros nomes para os *conteiners* logo depois da flag  `--name`.
+
 **Postgres**
 ```bash
 $ docker run --name database -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres:11
