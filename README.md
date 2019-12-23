@@ -3,7 +3,7 @@ Entrega do desafio final (apenas versão Android da versão mobile)
 
 Desenvolvido em ambiente Linux, inicialmente usando o sistema operacional <b>Solus 4.0</b> e finalizado no sistema operacional <b>Linux Lite 4.6</b>.
 
-O Yarn foi usado como o gerenciador de pacotes de toda a aplicação.
+Gerenciador de pacotes de toda a aplicação: yarn
 
 ------------
 
