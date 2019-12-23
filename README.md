@@ -1,7 +1,7 @@
 # Rocketseat-Bootcamp-Gympoint
 Entrega do desafio final.
 
-Desenvolvido em ambiente Linux, inicialmente usando o sistema operacional <b>Solus 4.0</b> e finalizado no sistema operacional <b>Linux Lite 4.6</b>. Portanto, o aplicativo móvel foi testado apenas em dispositivo Android.
+Desenvolvido em ambiente Linux, inicialmente usando o sistema operacional <b>Solus 4.0</b> e finalizado no sistema operacional <b>Linux Lite 4.6</b>. Portanto, só foi possível testar o aplicativo móvel em dispositivo Android.
 
 O Yarn foi usado como o gerenciador de pacotes de toda a aplicação.
 
@@ -44,7 +44,7 @@ $ npx sequelize-cli db:migrate
 ### Populando o banco de dados (*running seeds*)
 Existem dois arquivos na pasta `src/database/seeds` para popular o banco de dados. O primeiro arquivo cria um usuário administrador que pode acessar o sistema usando e-mail e senha (`admin@gympoint.com` e `123456` respectivamente). O segundo arquivo cria o cadastro de alguns alunos.
 
-Com o terminal aberto do diretório `gympointAPI`, execute o seguinte comando:
+Com o terminal aberto no diretório `gympointAPI`, execute o seguinte comando:
 ```javascript
 $ npx sequelize-cli db:seed:all
 ```
