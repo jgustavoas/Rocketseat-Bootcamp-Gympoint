@@ -97,9 +97,11 @@ Abra uma aba do terminal, mude para a pasta `gympointWeb` e lá execute o comand
 ```javascript
 $ yarn start
 ```
+O Gympoint Web roda em `http://localhost:3000/`
 
 ### Iniciando Gympoint App
-Abra uma aba do terminal, mude para a pasta `gympointApp` e lá execute o comando:
+Abra uma nova aba do terminal, mude para a pasta `gympointApp` e execute o comando:
 ```javascript
 $ react-native run-android
 ```
+
