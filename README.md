@@ -1,7 +1,7 @@
 # RocketSeat-Bootcamp-Gympoint
-Entrega do desafio final (apenas versão Android da versão mobile)
+Entrega do desafio final.
 
-Desenvolvido em ambiente Linux, inicialmente usando o sistema operacional <b>Solus 4.0</b> e finalizado no sistema operacional <b>Linux Lite 4.6</b>.
+Desenvolvido em ambiente Linux, inicialmente usando o sistema operacional <b>Solus 4.0</b> e finalizado no sistema operacional <b>Linux Lite 4.6</b>. Portanto, o aplicativo móvel foi testado apenas em dispositivo Android.
 
 O Yarn foi usado como o gerenciador de pacotes de toda a aplicação.
 
