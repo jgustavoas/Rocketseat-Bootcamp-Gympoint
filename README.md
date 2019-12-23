@@ -36,7 +36,7 @@ Baixe o repositório numa pasta de sua preferência.
 1. Use uma GUI para banco de dados SQL de sua preferência (Postbird, DBeaver, Valentina Studio ou outro) e crie um banco de dados Postgres com o nome `gympoint` e encoding `UTF-8`. Use `postgres` como nome de usuário e `docker` como senha.
 
 ### Estruturando o banco de dados Postgres da aplicação (*running migrations*)
-Com o terminal aberto do diretório `gympointAPI`, execute o seguinte comando:
+Com o terminal aberto no diretório `gympointAPI`, execute o seguinte comando:
 ```javascript
 $ npx sequelize-cli db:migrate 
 ```
