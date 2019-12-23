@@ -54,7 +54,7 @@ $ npx sequelize-cli db:seed:all
 ------------
 ## Testando a aplicação
 
-### Iniciando os servidores
+### Iniciando os servidores (GympointAPI)
 A aplicação funciona com dois servidores em execução:
 1. O principal, do *core* da API, das rotas, dos *Controlles* e dos bancos de dados Postgres e Mongo;
 1. O secundário, das filas ("***queues***") de trabalhos em segundo plano, para envio de e-mail e uso do banco de dados Redis.
