@@ -35,6 +35,20 @@ Baixe o repositório numa pasta de sua preferência.
 
 1. Use um gerenciador de banco de dados SQL de sua preferência (Postbird, DBeaver, Valentina Studio ou outro) e crie um banco de dados Postgres com o nome `gympoint` e encoding `UTF-8`. Use "postgres" como nome de usuário e "docker" como senha.
 
+### Estruturando o banco de dados Postgres da aplicação (*running migrations*)
+Com o terminal aberto do diretório `gympointAPI`, execute o seguinte comando:
+```javascript
+$ npx sequelize-cli db:migrate 
+```
+
+### Populando o banco de dados (*running seeds*)
+Com o terminal aberto do diretório `gympointAPI`, execute o seguinte comando:
+```javascript
+$ npx sequelize-cli db:seed:all
+```
+
+A aplicação está pronta para rodar!
+
 ### Iniciando os servidores
 A aplicação funciona com dois servidores em execução:
 1. O principal, dos bancos de dados Postgres e Mongo;
@@ -72,16 +86,3 @@ $ nodemon --inspect src/queue.js
 Debugger listening on ws://127.0.0.1:9229/a42a1802-5728-4ad1-b615-d3525245b409
 For help, see: https://nodejs.org/en/docs/inspector
 ```
-
-### Estruturando o banco de dados Postgres da aplicação (*running migrations*)
-Com o terminal aberto do diretório `gympointAPI`, execute o seguinte comando:
-```javascript
-$ npx sequelize-cli db:migrate 
-```
-
-### Populando o banco de dados (*running seeds*)
-Com o terminal aberto do diretório `gympointAPI`, execute o seguinte comando:
-```javascript
-$ npx sequelize-cli db:seed:all
-```
-
