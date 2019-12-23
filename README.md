@@ -42,7 +42,7 @@ $ npx sequelize-cli db:migrate
 ```
 
 ### Populando o banco de dados (*running seeds*)
-Existem dois arquivos na pasta `src/database/seeds` para popular o banco de dados. O primeiro arquivo cria um usuário administrador que pode acessar o sistema usando e-mail e senha (`admin@gympoint.com` e `123456` respectivamente). O segundo arquivo cria o cadastro de alguns estudantes.
+Existem dois arquivos na pasta `src/database/seeds` para popular o banco de dados. O primeiro arquivo cria um usuário administrador que pode acessar o sistema usando e-mail e senha (`admin@gympoint.com` e `123456` respectivamente). O segundo arquivo cria o cadastro de alguns alunos.
 
 Com o terminal aberto do diretório `gympointAPI`, execute o seguinte comando:
 ```javascript
