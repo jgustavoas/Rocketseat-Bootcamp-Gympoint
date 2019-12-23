@@ -26,13 +26,13 @@ $ docker run --name gympoint_mongo -p 27017:27017 -d -t mongo
 $ docker run --name gympoint_redis -p 6379:6379 -d -t redis:alpine
 ```
 
-1. Inicialize os três containers no Docker via terminal:
+2. Inicialize os três containers no Docker via terminal:
 ```bash
 $ docker start database
 $ docker start gympoint_mongo 
 $ docker start gympoint_redis
 ```
-1. Use um gerenciador de banco de dados SQL de sua preferência (Postbird, DBeaver, Valentina Studio ou outro) e crie um banco de dados Postgres com o nome `gympoint` e encoding `UTF-8`. Use "postgres" como nome de usuário e "docker" como senha.
+3. Use um gerenciador de banco de dados SQL de sua preferência (Postbird, DBeaver, Valentina Studio ou outro) e crie um banco de dados Postgres com o nome `gympoint` e encoding `UTF-8`. Use "postgres" como nome de usuário e "docker" como senha.
 
 ### Iniciando os servidores
 A aplicação funciona com dois servidores em execução:
