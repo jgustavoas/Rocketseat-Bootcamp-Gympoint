@@ -7,32 +7,33 @@ O Yarn foi usado como o gerenciador de pacotes de toda a aplicação.
 
 ------------
 
-## Instalação
+## # Instalação
 Baixe o repositório numa pasta de sua preferência.
 
 ### Preparando o back-end
 1. Abra o terminal e instale via Docker os *conteiners* para os bancos de dados Postgres, Mongo e Redis conforme abaixo. Se preferir, use outros nomes para os *conteiners* logo depois da flag  `--name`.
 
-**Postgres**
-```bash
-$ docker run --name database -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres:11
-```
-**Mongo**
-```bash
-$ docker run --name gympoint_mongo -p 27017:27017 -d -t mongo
-```
-**Redis**
-```bash
-$ docker run --name gympoint_redis -p 6379:6379 -d -t redis:alpine
-```
+	**Postgres**
+	```bash
+	$ docker run --name database -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres:11
+	```
+	**Mongo**
+	```bash
+	$ docker run --name gympoint_mongo -p 27017:27017 -d -t mongo
+	```
+	**Redis**
+	```bash
+	$ docker run --name gympoint_redis -p 6379:6379 -d -t redis:alpine
+	```
 
-2. Inicialize os três containers no Docker via terminal:
-```bash
-$ docker start database
-$ docker start gympoint_mongo 
-$ docker start gympoint_redis
-```
-3. Use um gerenciador de banco de dados SQL de sua preferência (Postbird, DBeaver, Valentina Studio ou outro) e crie um banco de dados Postgres com o nome `gympoint` e encoding `UTF-8`. Use "postgres" como nome de usuário e "docker" como senha.
+1. Inicialize os três containers no Docker via terminal:
+	```bash
+	$ docker start database
+	$ docker start gympoint_mongo 
+	$ docker start gympoint_redis
+	```
+
+1. Use um gerenciador de banco de dados SQL de sua preferência (Postbird, DBeaver, Valentina Studio ou outro) e crie um banco de dados Postgres com o nome `gympoint` e encoding `UTF-8`. Use "postgres" como nome de usuário e "docker" como senha.
 
 ### Iniciando os servidores
 A aplicação funciona com dois servidores em execução:
