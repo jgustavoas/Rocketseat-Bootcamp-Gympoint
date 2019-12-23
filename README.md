@@ -49,7 +49,7 @@ Com o terminal aberto do diretório `gympointAPI`, execute o seguinte comando:
 $ npx sequelize-cli db:seed:all
 ```
 
-###### Agora aplicação está pronta para testar! 
+###### Agora a aplicação está pronta para testar! 
 
 ------------
 
