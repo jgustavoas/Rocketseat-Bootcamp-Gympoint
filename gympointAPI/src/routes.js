@@ -36,16 +36,16 @@ routes.post('/sessions', SessionController.store);
 // Esse middleware "global" só vai funcionar para as rotas nas linhas abaixo dele
 routes.use(authMiddleware);
 
-routes.post('/students', StudentController.store);
-routes.put('/students/:id', StudentController.update);
 routes.get('/students', StudentController.index);
 routes.get('/students/:id', StudentController.select);
+routes.post('/students', StudentController.store);
+routes.put('/students/:id', StudentController.update);
 routes.delete('/students', StudentController.delete);
 
 routes.get('/plans', PlanController.index);
+routes.get('/plans/:id', PlanController.select);
 routes.post('/plans', PlanController.store);
 routes.put('/plans/:id', PlanController.update);
-routes.get('/plans/:id', PlanController.select);
 routes.delete('/plans', PlanController.delete);
 
 routes.get('/matriculations', MatrciculationController.index);
