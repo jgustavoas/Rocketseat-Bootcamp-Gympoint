@@ -42,15 +42,19 @@ $ npx sequelize-cli db:migrate
 ```
 
 ### Populando o banco de dados (*running seeds*)
+Existem dois arquivos na pasta `src/database/seeds` para popular o banco de dados. O primeiro arquivo cria um usuário administrador que pode acessar o sistema usando e-mail e senha (`admin@gympoint.com` e `123456` respectivamente). O segundo arquivo cria o cadastro de alguns estudantes.
+
 Com o terminal aberto do diretório `gympointAPI`, execute o seguinte comando:
 ```javascript
 $ npx sequelize-cli db:seed:all
 ```
-<br/>
-###### A aplicação está pronta para rodar! <br/>Agora é só iniciar os servidores e, a aplicação web e o app.
-<br/>
 
-### Iniciando os servidores
+###### Agora aplicação está pronta para testar! 
+
+------------
+
+
+## Iniciando os servidores
 A aplicação funciona com dois servidores em execução:
 1. O principal, dos bancos de dados Postgres e Mongo;
 1. O secundário, das filas ("***queues***") de trabalhos em segundo plano, para envio de e-mail e uso do banco de dados Redis.
