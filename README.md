@@ -10,8 +10,8 @@ O Yarn foi usado como o gerenciador de pacotes de toda a aplicação.
 ## Instalação
 Baixe o repositório numa pasta de sua preferência.
 
-### Preparando o back-end
-1. Abra o terminal e instale via Docker os *conteiners* para os bancos de dados Postgres, Mongo e Redis conforme abaixo. Se preferir, use outros nomes para os *conteiners* logo depois da flag  `--name`.
+### Preparando o back-end com o Docker
+1. Abra o terminal e instale *conteiners* para os bancos de dados Postgres, Mongo e Redis conforme abaixo. Se preferir, use outros nomes para os *conteiners* logo depois da flag  `--name`.
 
 	**Postgres**
 	```bash
@@ -26,7 +26,7 @@ Baixe o repositório numa pasta de sua preferência.
 	$ docker run --name gympoint_redis -p 6379:6379 -d -t redis:alpine
 	```
 
-1. Inicialize os três containers no Docker via terminal:
+1. Inicialize os três *containers* no Docker via terminal:
 	```bash
 	$ docker start database
 	$ docker start gympoint_mongo 
