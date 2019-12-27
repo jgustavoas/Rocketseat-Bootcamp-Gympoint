@@ -67,35 +67,12 @@ class CheckinController {
       const quantosCheckins = checkins.length;
 
       if (quantosCheckins === 5) {
-        /* const intervalo4 = eachDayOfInterval({
-          start: checkins[4].createdAt,
-          end: checkins[3].createdAt,
-        });
-        const intervalo3 = eachDayOfInterval({
-          start: checkins[3].createdAt,
-          end: checkins[2].createdAt,
-        });
-        const intervalo2 = eachDayOfInterval({
-          start: checkins[2].createdAt,
-          end: checkins[1].createdAt,
-        });
-        const intervalo1 = eachDayOfInterval({
-          start: checkins[1].createdAt,
-          end: checkins[0].createdAt,
-        }); */
-
         const intervalo = eachDayOfInterval({
           start: checkins[4].createdAt,
           end: checkins[0].createdAt,
         });
 
-        if (
-          /* intervalo4.length <= 7 &&
-          intervalo3.length <= 7 &&
-          intervalo2.length <= 7 &&
-          intervalo1.length <= 7 */
-          intervalo.length <= 7
-        ) {
+        if (intervalo.length <= 7) {
           return res.status(200).json({
             impedido: `Você já fez 5 checkins dentro sete dias!`,
           });
