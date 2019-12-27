@@ -1,4 +1,4 @@
-#   Refatorando todas as operações "CRUD" da aplicação para uma única *action* chamada "request"
+#   Refatorando todas as operações CRUD da aplicação para uma única *action* chamada "request"
 
 ###   Os módulos da aplicação foram resumidos em dois:
 1) Um chamado "auth", exclusivo para autenticação de usuário do sistema.
