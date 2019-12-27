@@ -23,7 +23,7 @@ export function request(type, page, data) {
   request('DELETE', page, id)
 ```
 
-  O objeto `formData` contém todos os valores dos inputs nas respectivas páginas.
+  O objeto `formData` contém todos os valores dos inputs dos formulários das respectivas páginas.
 
 ####   Exemplos de uso:
 1) Action para cadastrar um aluno:
