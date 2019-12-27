@@ -23,14 +23,14 @@ export function request(type, page, data) {
   request('DELETE', page, id)
 ```
 
-  O objeto `formData` contém todos os valores dos inputs dos formulários das respectivas páginas.
+  O objeto `formData` contém os valores dos inputs dos formulários das respectivas páginas.
 
 ####   Exemplos de uso:
 1) Action para cadastrar um aluno:
 ```javascript
 request('CREATE', 'students', formData);
 ```
-No arquivo `saga.js`, os dados do formulário são enviados à API dentro de um objeto chamado "data".
+No arquivo `data/sagas.js`, os dados do formulário são enviados à API dentro de um objeto chamado "data".
 
 ```json
 { 
