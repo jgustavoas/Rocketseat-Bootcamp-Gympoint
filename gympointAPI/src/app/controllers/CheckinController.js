@@ -1,5 +1,4 @@
 import { eachDayOfInterval } from 'date-fns';
-
 import Checkin from '../models/Checkin';
 import Matriculation from '../models/Matriculation';
 import Student from '../models/Student';
