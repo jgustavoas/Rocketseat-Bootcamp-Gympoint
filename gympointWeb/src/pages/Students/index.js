@@ -3,9 +3,7 @@ import { useDispatch } from 'react-redux';
 import { MdAdd } from 'react-icons/md';
 import api from '~/services/api';
 
-import { deleteItem } from '~/functions/general';
-
-import history from '~/services/history';
+import { goTo, deleteItem } from '~/functions/general';
 
 export default function Students() {
   const dispatch = useDispatch();
@@ -23,10 +21,6 @@ export default function Students() {
   useEffect(() => {
     loadStudents();
   }, []);
-
-  function goTo(page) {
-    history.push(`/${page}`);
-  }
 
   return (
     <>

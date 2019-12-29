@@ -6,9 +6,7 @@ import pt from 'date-fns/locale/pt';
 import { MdAdd, MdCheckCircle } from 'react-icons/md';
 import api from '~/services/api';
 
-import { deleteItem } from '~/functions/general';
-
-import history from '~/services/history';
+import { goTo, deleteItem } from '~/functions/general';
 
 import { Tbody } from './styles';
 
@@ -38,10 +36,6 @@ export default function Plans() {
   useEffect(() => {
     loadMatriculations();
   }, []);
-
-  function goTo(page) {
-    history.push(`/${page}`);
-  }
 
   return (
     <>
