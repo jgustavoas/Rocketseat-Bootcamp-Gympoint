@@ -1,6 +1,6 @@
 # RocketSeat-Bootcamp-Gympoint
 Entrega do desafio final<br/>
-Branch de backup do primeiro commit e **sem refatoração das funções**.
+Branch de backup do primeiro commit e **sem refatoração das funções `gympointWeb/src/`**.
 <hr />
 Apenas versão Android do app.
 
