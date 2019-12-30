@@ -19,7 +19,7 @@ export default function SignIn() {
   const dispatch = useDispatch();
   const loading = useSelector(state => state.auth.loading);
 
-  // Nos parâmetros de "handleSubmit", desestruturar 'data', que vem do formulário
+  // Nos parâmetros de "handleSubmit", já desestruturar 'data' que vem do formulário
   function handleSubmit({ email, password }) {
     dispatch(signInRequest(email, password));
   }
