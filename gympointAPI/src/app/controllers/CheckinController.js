@@ -68,7 +68,7 @@ class CheckinController {
       if (quantosCheckins === 5) {
         const intervalo = eachDayOfInterval({
           start: checkins[4].createdAt,
-          end: checkins[0].createdAt,
+          end: new Date(),
         });
 
         if (intervalo.length <= 7) {
